@@ -1,0 +1,105 @@
+ccd<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا والأجهزة التي نتعامل معها</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+             <!--                       -->
+   <nav>
+    <ul>
+        <li><a href="{% url 'index' %}">الرئيسية</a></li>
+        <li><a href="{% url 'about' %}">عني</a></li>
+        <li><a href="{% url 'products' %}">خدماتي</a></li>
+        <li><a href="{% url 'contact' %}">تواصل معي</a></li>
+    </ul>
+   </nav>
+                 <!--                       -->
+    <main>
+        <h1>خدماتنا والأجهزة التي نتعامل معها</h1>
+                 <!--                       -->
+        <h2 class="section-title">الأجهزة المنزلية</h2>
+        <div class="products-grid">
+                          <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/890.jpg' %}" alt="صيانة الغسالات">
+                <h3>الغسالات  العادية الأوتوماتيكية </h3>
+                <p> إصلاح وبيع قطع غيار  الغسالات  العادية الأوتوماتيكية </p>
+            </div>
+                           <!--                       -->  
+            
+            <div class="product-card">
+                <img src="{% static 'images/57.jpg' %}" alt="صيانة الأفران">
+                <h3>صيانة الأفران</h3>
+                <p>إصلاح وبيع قطع غيار الأفران وأجهزة المطبخ</p>
+            </div>
+        </div>
+        
+                         <!--                       -->
+
+        <h2 class="section-title">الأجهزة الإلكترونية</h2>
+        <div class="products-grid">
+                             <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/345.jpg' %}" alt="صيانة التلفاز">
+                <h3>صيانة أجهزة الشاشات</h3>
+                <p>إصلاح وصيانة جميع أنواع الشاشات  </p>
+            </div>
+                            <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/23.jpg' %}" alt="صيانة الاكترونيات">
+                <h3>صيانة أجهزة الأكترونية</h3>
+                <p>إصلاح وتحديث  اللوحات الاكترونية </p>
+            </div>
+
+        </div>
+            
+
+            
+        <h2 class="section-title">المعدات الصناعية</h2>
+        <div class="products-grid">
+                             <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/800.jpg' %}" alt="صيانة مخارط">
+                <h3>مكائن الخراطة</h3>
+                <p>إصلاح دائرة الكهربائية للمخارط   </p>
+            </div>
+                            <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/900.jpg' %}" alt="cnc machine">
+                <h3>CNC machine </h3>
+                <p>إصلاح وصيانة مكائن   </p>
+                <P>CNC</P>
+            </div>
+
+
+                        <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/789.jpg' %}" alt="صيانة مكائن التفريز">
+                <h3>مكائن تفريز </h3>
+                <p>إصلاح دائرة الكهربائية مكائن التفريز    </p>
+            </div>
+                            <!--                       -->
+            <div class="product-card">
+                <img src="{% static 'images/987.jpg' %}" alt="دوائر التحكم الكهربائية ">
+                <h3>دوائر التحكم الكهربائية  </h3>
+                <p>دائرة التحكم بحركة الالواح الشمسية </p>
+               
+            </div>
+
+
+
+
+
+            
+           
+        </div>
+    </main>
+</body>
+</html>

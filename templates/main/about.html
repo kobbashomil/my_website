@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عني</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+    <!--                       -->
+<nav>
+    <ul>
+        <li><a href="{% url 'index' %}">الرئيسية</a></li>
+        <li><a href="{% url 'about' %}">عني</a></li>
+        <li><a href="{% url 'products' %}">خدماتي</a></li>
+        <li><a href="{% url 'contact' %}">تواصل معي</a></li>
+    </ul>
+</nav>
+                    <!--                       -->
+    <main>
+        <h1>عني</h1>
+        <div class="profile-section">
+            <img src="{% static 'images/33.jpg' %}" alt="صورة خالد عمر باشميل" class="profile-image" style="width: 200px; height: auto; border-radius: 10px;">
+
+
+            <div class="about-content">
+                <h2>م. خالد عمر باشميل</h2>
+                <div class="about-details">
+                    <h3> لصيانة الأجهزة الكهربائية والإلكترونية</h3>
+                    <div class="expertise-areas">
+                        <h4>مجالات الخبرة:</h4>
+                        <ul>
+                            <li> صيانة المعدات الصناعية </li>
+                            <li>  تصميم و تركيب أنظمة تتبع الألواح الشمسية   </li>
+                            
+                            <li>صيانة الأجهزة الإلكترونية</li>
+                            <li>تركيب وبرمجة الأجهزة الحديثة</li>
+                            <li>الصيانة الوقائية والدورية</li>
+                            <li>تشخيص وحل مشاكل الأجهزة المنزلية والإلكترونية</li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <h4>الخدمات المقدمة:</h4>
+                        <ul>
+                            
+                            
+                            
+                            <li> صيانة المعدات الصناعية </li>
+                            <li>تصميم و تركيب أنظمة تتبع الألواح الشمسية</li>
+                            
+                            <li>إصلاح الأفران والميكروويف</li>
+                            <li>صيانة الشاشات </li>
+                            <li>إصلاح أجهزة الإلكترونية</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

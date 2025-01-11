@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="{% url 'index' %}">الرئيسية</a></li>
+        <li><a href="{% url 'about' %}">عني</a></li>
+        <li><a href="{% url 'products' %}">خدماتي</a></li>
+        <li><a href="{% url 'contact' %}">تواصل معي</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <h1> المهندس/ خالد عمر باشميل</h1>
+        <h3>  عنواني - اليمن - صنعاء - خط المطار   </h3>
+        <br>
+     
+        <h3>موبايل :   777379653 </h3> 
+        <br>
+        
+
+        <h3>
+              <a href="https://mail.google.com/mail/?view=cm&to=kobashomil@gmil.com" target="_blank">
+             التواصل عبر البريد الاكتروني : kobashomil@gmil.com
+                   
+              </a>
+        </h3>
+    </main>
+</body>
+</html>
